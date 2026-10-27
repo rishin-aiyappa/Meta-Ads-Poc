@@ -74,7 +74,7 @@ PoC does.
 | Item | Value |
 |------|-------|
 | Host | `https://graph.facebook.com` |
-| API version | `v23.0` (configurable via `META_API_VERSION`) — **confirm against Meta's current release**; versions are deprecated ~2 years after release |
+| API version | `v23.0` (configurable via `META_API_VERSION`) |
 | Endpoint shape | `GET /<version>/act_<ad_account_id>/insights` |
 | Credential | One System User access token, `ads_read`, minted once in Skypoint's Business Manager |
 | Credential lifetime | **Static — no refresh flow.** A System User token does not expire; it is either valid or revoked |
@@ -462,8 +462,6 @@ DataFrame scaffolding here would only be thrown away.
       each client's tenant Key Vault at seed time). Not to be re-opened.
 - [ ] **Get client sign-off on the conversion definition** — which `actions`
       types count (§4.3).
-- [ ] **Confirm the Graph API version** against Meta's current release, and note
-      its deprecation date.
 - [ ] **Confirm the backfill horizon** with the client (Meta retains insights for
       37 months; that is the ceiling, not the answer).
 - [ ] Reserve the ACR image name `source-meta-ads` in `crskypointprod001`.
