@@ -453,8 +453,6 @@ DataFrame scaffolding here would only be thrown away.
 - [x] ~~**First client ad-account grant**~~ — **done**, Kyrene School District,
       *View performance* (read-only).
 - [x] ~~**First live CSV extract**~~ — **done**, 27 rows for 20–26 Oct 2026.
-- [ ] **Revoke the 2026-10-27 token and issue a fresh one.** It was pasted into a
-      chat session during setup. Put the replacement straight into `.env`.
 - [ ] **Run `meta_incremental.py` twice, a day apart** to measure the attribution
       restatement for real.
 - [ ] **Client sandbox details** — `instance_id`, `tenant_id`, Key Vault name, and
