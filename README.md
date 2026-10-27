@@ -186,8 +186,6 @@ Two columns are not straight mappings:
   that fired — `link_click`, `landing_page_view`, `post_engagement`,
   `offsite_conversion.fb_pixel_purchase`, and so on. This PoC sums the types
   matching `offsite_conversion`, `purchase`, `lead`, `complete_registration`.
-  **That list needs client sign-off before production** — it is the difference
-  between two defensible numbers, not between right and wrong.
 - **`reach` does not sum.** It is unique people, so daily reach cannot be added
   across days to get weekly reach. A rollup that sums it is wrong.
 
@@ -256,7 +254,7 @@ Implemented here rather than just described:
 | Data location | Only the credential is shared. Synced data lands **only** in that client's own ADLS Gen2. |
 | Token refresh / "publishing the app" / 7-day expiry | **Not applicable to Meta.** The System User token is set to never expire; there is no refresh token and no Testing mode. |
 | Token permission | `ads_read` only (read-only). |
-| Conversion definition | PoC sums action types matching `offsite_conversion`, `purchase`, `lead`, `complete_registration`. Still **needs client sign-off** before production. |
+| Conversion definition | PoC sums action types matching `offsite_conversion`, `purchase`, `lead`, `complete_registration`. |
 
 **Still outstanding (needs a human, not a decision):** the Kyrene sandbox
 `instance_id`, `tenant_id`, Key Vault name and ADLS path from Studio. Nothing in

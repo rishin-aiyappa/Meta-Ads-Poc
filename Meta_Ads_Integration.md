@@ -240,9 +240,7 @@ action type that fired — `landing_page_view`, `link_click`, `post_engagement`,
 `offsite_conversion.fb_pixel_purchase`, and so on. Which of those *counts* as a
 conversion is a business definition. This PoC sums action types matching
 `offsite_conversion`, `purchase`, `lead`, `complete_registration`
-(`meta_client.CONVERSION_ACTION_TYPES`). **That list needs client sign-off before
-production** — it is the difference between two defensible numbers, not between
-right and wrong.
+(`meta_client.CONVERSION_ACTION_TYPES`).
 
 ### 4.4 Not yet pulled
 
@@ -460,8 +458,6 @@ DataFrame scaffolding here would only be thrown away.
       without this.**
 - [x] ~~**Key Vault decision**~~ — **decided: Option A** (copy the shared token into
       each client's tenant Key Vault at seed time). Not to be re-opened.
-- [ ] **Get client sign-off on the conversion definition** — which `actions`
-      types count (§4.3).
 - [ ] **Confirm the backfill horizon** with the client (Meta retains insights for
       37 months; that is the ceiling, not the answer).
 - [ ] Reserve the ACR image name `source-meta-ads` in `crskypointprod001`.
