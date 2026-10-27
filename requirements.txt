@@ -1,0 +1,10 @@
+# Exact pins, per the platform rule (DO: "exact-pin requirements.txt").
+# For the real source-meta-ads image these must be re-captured with
+# `pip freeze` from inside the built python:3.11.15-slim container rather
+# than resolved on a dev machine -- a dev-resolved set can drift from what
+# actually ships.
+requests==2.32.3
+
+# Optional convenience only: the scripts read plain environment variables if
+# this isn't installed. Not a dependency of the real connector.
+python-dotenv==1.0.1
